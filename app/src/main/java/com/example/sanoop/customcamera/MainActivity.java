@@ -43,7 +43,6 @@ import com.googlecode.tesseract.android.TessBaseAPI;
 public class MainActivity extends AppCompatActivity{
     private ImageView imageView;
     private EditText ocrText;
-    private Button camera, gallery;
     static final int CAMERA_CAPTURE = 1;
     static final int PERMISSION_ALL = 0;
     final int PIC_CROP = 3;
@@ -51,7 +50,6 @@ public class MainActivity extends AppCompatActivity{
     private Uri picUri;
 
     private static final String TAG = "CustomCamera.java";
-    String mCurrentPhotoPath;
     public static final String lang = "eng";
     public static final String PACKAGE_NAME = "com.example.sanoop.customcamera";
     public final String DATA_PATH = Environment.getExternalStorageDirectory().toString() + "/Android/data/" + PACKAGE_NAME +  "/";
