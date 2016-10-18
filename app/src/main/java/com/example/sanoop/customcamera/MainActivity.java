@@ -154,10 +154,10 @@ public class MainActivity extends AppCompatActivity{
         Log.v(TAG, "OCRED TEXT: " + recognizedText);
 
         if ( lang.equalsIgnoreCase("eng") ) {
-            recognizedText = recognizedText.replaceAll("[^a-zA-Z0-9]+", " ");
+            recognizedText = recognizedText.replaceAll("[^a-zA-Z0-9.]+", " ");
         }
 
-        recognizedText = recognizedText.trim();
+//        recognizedText = recognizedText.trim();
 
         if ( recognizedText.length() != 0 ) {
             ocrText.setText(ocrText.getText().toString().length() == 0 ? recognizedText : ocrText.getText() + " " + recognizedText);
